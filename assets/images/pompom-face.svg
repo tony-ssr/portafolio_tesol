@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <g>
+    <!-- Left ear -->
+    <path d="M 24,42 C 12,44 10,60 12,68 C 14,75 20,77 24,71 C 27,67 27,52 24,42 Z" 
+          fill="#F5C842" stroke="#4A2E1B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right ear -->
+    <path d="M 76,42 C 88,44 90,60 88,68 C 86,75 80,77 76,71 C 73,67 73,52 76,42 Z" 
+          fill="#F5C842" stroke="#4A2E1B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Round face -->
+    <ellipse cx="50" cy="58" rx="34" ry="29" fill="#FDD655" stroke="#4A2E1B" stroke-width="2.5"/>
+
+    <!-- Brown beret -->
+    <path d="M 33,28 C 33,20 41,18 50,18 C 59,18 67,20 67,28 C 67,32 59,34 50,34 C 41,34 33,32 33,28 Z" 
+          fill="#523019" stroke="#3D200E" stroke-width="2.2" stroke-linejoin="round"/>
+    <!-- Beret tiny stalk -->
+    <path d="M 50,18 C 50,13 52,11 53,10" 
+          stroke="#3D200E" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+
+    <!-- Rosy cheeks -->
+    <ellipse cx="30" cy="64" rx="5" ry="3" fill="#FFA5A5" opacity="0.85"/>
+    <ellipse cx="70" cy="64" rx="5" ry="3" fill="#FFA5A5" opacity="0.85"/>
+
+    <!-- Smiling eyes -->
+    <ellipse cx="38" cy="56" rx="2.6" ry="3" fill="#4A2E1B"/>
+    <ellipse cx="62" cy="56" rx="2.6" ry="3" fill="#4A2E1B"/>
+
+    <!-- Snout & mouth -->
+    <ellipse cx="50" cy="61" rx="2.8" ry="2.2" fill="#4A2E1B"/>
+    <path d="M 45,64 Q 47.5,67 50,64.5 Q 52.5,67 55,64" 
+          stroke="#4A2E1B" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

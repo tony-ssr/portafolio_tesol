@@ -725,11 +725,12 @@ p:last-child { margin-bottom: 0; }
 
 .lightbox__close {
   position: absolute;
-  top: var(--spacing-md);
-  right: var(--spacing-md);
+  top: 16px;
+  right: 16px;
   width: 40px;
   height: 40px;
-  background: rgba(245, 200, 66, 0.9);
+  background: rgba(254, 249, 231, 0.95);
+  border: 2px solid var(--clr-golden);
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
@@ -737,8 +738,10 @@ p:last-child { margin-bottom: 0; }
   color: var(--clr-brown);
   font-size: 1.25rem;
   font-weight: 700;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
   transition: background var(--transition-fast), transform var(--transition-fast);
   line-height: 1;
+  z-index: 10;
 }
 
 .lightbox__close:hover {
@@ -753,21 +756,27 @@ p:last-child { margin-bottom: 0; }
   transform: translateY(-50%);
   width: 44px;
   height: 44px;
-  background: rgba(245, 200, 66, 0.85);
+  background: rgba(254, 249, 231, 0.95);
+  border: 2px solid var(--clr-golden);
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--clr-brown);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  transition: background var(--transition-fast);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  transition: background var(--transition-fast), transform var(--transition-bounce);
   z-index: 10;
 }
 
-.lightbox__nav:hover { background: var(--clr-golden); }
-.lightbox__nav--prev { left: -22px; }
-.lightbox__nav--next { right: -22px; }
+.lightbox__nav:hover {
+  background: var(--clr-golden);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox__nav--prev { left: 16px; }
+.lightbox__nav--next { right: 16px; }
 
 /* --------------------------------------------------------------------------
    10. Document Viewer / PDF Sections
