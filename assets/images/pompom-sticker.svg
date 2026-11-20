@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <filter id="sticker-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#4a2e1b" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#sticker-shadow)">
+    <!-- White die-cut sticker outline -->
+    <path d="M 35,38 C 15,38 12,58 12,68 C 12,78 20,85 28,85 C 28,102 42,108 60,108 C 78,108 92,102 92,85 C 100,85 108,78 108,68 C 108,58 105,38 85,38 C 82,25 74,22 60,22 C 46,22 38,25 35,38 Z" 
+          fill="#FFFFFF" stroke="#FFFFFF" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" />
+
+    <!-- Left floppy ear -->
+    <path d="M 32,48 C 18,48 16,66 18,74 C 20,80 26,82 32,76 C 35,72 35,58 32,48 Z" 
+          fill="#FDD458" stroke="#4A2E1B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Right floppy ear -->
+    <path d="M 88,48 C 102,48 104,66 102,74 C 100,80 94,82 88,76 C 85,72 85,58 88,48 Z" 
+          fill="#FDD458" stroke="#4A2E1B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Main chubby round head -->
+    <ellipse cx="60" cy="68" rx="35" ry="32" fill="#FEDE6E" stroke="#4A2E1B" stroke-width="2.5"/>
+
+    <!-- Signature Brown Beret -->
+    <path d="M 42,32 C 42,24 50,22 60,22 C 70,22 78,24 78,32 C 78,36 70,38 60,38 C 50,38 42,36 42,32 Z" 
+          fill="#5A3319" stroke="#3D200E" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Beret tiny stalk -->
+    <path d="M 60,22 C 60,17 62,15 63,14" 
+          stroke="#3D200E" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+    <!-- Rosy cheeks (cute blush) -->
+    <ellipse cx="38" cy="74" rx="5.5" ry="3.5" fill="#FFA4A4" opacity="0.85"/>
+    <ellipse cx="82" cy="74" rx="5.5" ry="3.5" fill="#FFA4A4" opacity="0.85"/>
+
+    <!-- Eyes (smiling/warm little dots) -->
+    <ellipse cx="46" cy="66" rx="2.8" ry="3.2" fill="#4A2E1B"/>
+    <ellipse cx="74" cy="66" rx="2.8" ry="3.2" fill="#4A2E1B"/>
+
+    <!-- Cute dog snout & mouth: nose + cute w-smile -->
+    <ellipse cx="60" cy="71" rx="3.2" ry="2.5" fill="#4A2E1B"/>
+    <!-- Cute smile -->
+    <path d="M 54,74 Q 57,77 60,74 Q 63,77 66,74" 
+          stroke="#4A2E1B" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

@@ -225,12 +225,12 @@ window.toggleInlinePdf = function(viewerId, pdfSrc, btn) {
     wrap.classList.remove('open');
     const iframe = wrap.querySelector('iframe');
     if (iframe) iframe.src = '';
-    if (btn) btn.textContent = '👁️ Vista rápida';
+    if (btn) btn.textContent = '📄 Quick Preview';
   } else {
     wrap.classList.add('open');
     const iframe = wrap.querySelector('iframe');
     if (iframe) iframe.src = pdfSrc;
-    if (btn) btn.textContent = '✕ Cerrar vista';
+    if (btn) btn.textContent = '✕ Close Preview';
     // Scroll into view smoothly
     setTimeout(() => wrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
   }
