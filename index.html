@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =====================================================================
+       Portafolio TESOL — María Alejandra Acosta Rodríguez
+       Diseñado con temática Pompompurin (Sanrio) × Apple Design Principles
+       ===================================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TESOL Teaching Portfolio — María Alejandra Acosta Rodríguez. Bachelor's Degree in Spanish and English Teaching, Universidad de Nariño." />
+  <meta name="author" content="María Alejandra Acosta Rodríguez" />
+
+  <!-- Open Graph (para previsualización en redes sociales) -->
+  <meta property="og:title" content="TESOL Portfolio — María Alejandra Acosta" />
+  <meta property="og:description" content="Teaching portfolio showcasing curriculum reflection, syllabus design, lesson planning, and original materials." />
+  <meta property="og:type" content="website" />
+
+  <title>TESOL Portfolio · María Alejandra Acosta</title>
+
+  <!-- Google Fonts: Playfair Display (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Favicon: emoji Pompompurin (🐾) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+</head>
+<body>
+
+  <!-- =====================================================================
+       Accesibilidad: skip link
+       ===================================================================== -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =====================================================================
+       NAVEGACIÓN
+       ===================================================================== -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container navbar__inner">
+      <!-- Marca / Nombre -->
+      <a href="#hero" class="navbar__brand" aria-label="Inicio — María Alejandra Acosta">
+        <span class="navbar__brand-icon" aria-hidden="true">🐾</span>
+        María A. Acosta
+      </a>
+
+      <!-- Links desktop -->
+      <ul class="navbar__links" role="list">
+        <li><a href="#about"      class="navbar__link">About Me</a></li>
+        <li><a href="#curriculum" class="navbar__link">Curriculum</a></li>
+        <li><a href="#syllabus"   class="navbar__link">Syllabus</a></li>
+        <li><a href="#lesson"     class="navbar__link">Lesson Plan</a></li>
+        <li><a href="#certificate" class="navbar__link">Certificate</a></li>
+        <li><a href="#material"   class="navbar__link">Material</a></li>
+        <li><a href="#reflection" class="navbar__link">Reflection</a></li>
+      </ul>
+
+      <!-- Toggle mobile -->
+      <button
+        class="navbar__toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Menú mobile -->
+    <div id="mobile-menu" class="navbar__mobile" role="list">
+      <a href="#about"      class="navbar__link">About Me</a>
+      <a href="#curriculum" class="navbar__link">Curriculum</a>
+      <a href="#syllabus"   class="navbar__link">Syllabus</a>
+      <a href="#lesson"     class="navbar__link">Lesson Plan</a>
+      <a href="#certificate" class="navbar__link">Certificate</a>
+      <a href="#material"   class="navbar__link">Material</a>
+      <a href="#reflection" class="navbar__link">Reflection</a>
+    </div>
+  </nav>
+
+  <!-- =====================================================================
+       CONTENIDO PRINCIPAL
+       ===================================================================== -->
+  <main id="main-content">
+
+    <!-- =================================================================
+         HERO — Presentación
+         ================================================================= -->
+    <section id="hero" class="hero" aria-label="Presentación">
+      <!-- Fondo decorativo suave -->
+      <div class="hero__pompom-bg" aria-hidden="true">
+        <!-- SVG: círculos concéntricos sutiles con colores Pompompurin -->
+        <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" fill="none">
+          <circle cx="160" cy="160" r="155" stroke="#F5C842" stroke-width="1"/>
+          <circle cx="160" cy="160" r="120" stroke="#F5C842" stroke-width="1"/>
+          <circle cx="160" cy="160" r="85" stroke="#F5C842" stroke-width="1"/>
+          <circle cx="160" cy="160" r="50" fill="#F5C842" opacity="0.3"/>
+        </svg>
+      </div>
+
+      <div class="container hero__inner">
+        <!-- Contenido textual -->
+        <div class="hero__content reveal">
+          <span class="hero__badge">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            TESOL Teaching Portfolio
+          </span>
+
+          <h1 class="hero__title">
+            María Alejandra<br />
+            <span>Acosta Rodríguez</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Future educator passionate about transforming language learning
+            through empathy, creativity, and meaningful connection.
+          </p>
+
+          <!-- Meta información -->
+          <div class="hero__meta">
+            <span class="hero__meta-item">
+              <!-- Icono institución -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2L2 7v2h20V7L12 2zm-7 9v7H3v2h18v-2h-2v-7h-2v7h-4v-7h-2v7H7v-7H5z"/>
+              </svg>
+              Universidad de Nariño
+            </span>
+            <span class="hero__meta-item">
+              <!-- Icono semestre -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+              </svg>
+              7th Semester · Spanish &amp; English Teaching
+            </span>
+            <span class="hero__meta-item">
+              <!-- Icono edad -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2a5 5 0 1 1 0 10A5 5 0 0 1 12 2zm0 12c5.33 0 8 2.67 8 4v2H4v-2c0-1.33 2.67-4 8-4z"/>
+              </svg>
+              21 years old
+            </span>
+          </div>
+        </div>
+
+        <!-- Fotografía -->
+        <div class="hero__visual reveal">
+          <div class="hero__photo-wrap">
+            <div class="hero__photo-frame">
+              <img
+                src="assets/images/maria-alejandra-profile.jpg"
+                alt="María Alejandra Acosta Rodríguez — retrato"
+                loading="eager"
+              />
+            </div>
+            <!-- Borde decorativo offset -->
+            <div class="hero__photo-deco" aria-hidden="true"></div>
+            <!-- Badge Pompompurin sutil -->
+            <div class="hero__pompom-badge" aria-hidden="true" title="Pompompurin 🐾">🐾</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         ABOUT ME — Visiones
+         ================================================================= -->
+    <section id="about" class="section section--alt" aria-labelledby="about-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Who I Am</span>
+          <h2 class="section__title" id="about-heading">About Me</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </header>
+
+        <!-- Párrafo autobiográfico -->
+        <div class="curriculum__text reveal" style="margin-bottom: var(--spacing-2xl);">
+          <p>
+            My name is <strong>María Alejandra Acosta</strong>. I am 21 years old and currently
+            in my seventh semester of the Bachelor's Degree in Spanish and English Teaching.
+            My passion for becoming an educator comes from a very personal place: I want to
+            transform the way languages are experienced in the classroom. Looking back at my own
+            journey, I often felt the limitations of rigid, traditional methods, and that is why
+            my purpose as a future teacher is to ensure my students have far better, warmer, and
+            more inspiring experiences learning Spanish and English than the ones I had. I want
+            to build a space where they feel truly supported, confident, and excited to discover
+            their own voices through language.
+          </p>
+        </div>
+
+        <!-- Tarjetas de visión -->
+        <div class="about-grid">
+          <!-- Visión 1: Lenguaje -->
+          <article class="about-card reveal">
+            <div class="about-card__icon" aria-hidden="true">🌐</div>
+            <h3 class="about-card__title">My Vision of Language</h3>
+            <p class="about-card__text">
+              For me, language is far more than a set of abstract grammar rules and isolated
+              vocabulary lists; it is a living, breathing bridge of human connection, culture,
+              and identity. Words carry our personal stories, emotions, and worldview — an active
+              social practice belonging to the real world.
+            </p>
+          </article>
+
+          <!-- Visión 2: Aprendizaje -->
+          <article class="about-card reveal">
+            <div class="about-card__icon" aria-hidden="true">✨</div>
+            <h3 class="about-card__title">My Vision of Language Learning</h3>
+            <p class="about-card__text">
+              Learning a language is an exploratory, deeply human journey. I believe learning
+              truly flourishes when students feel emotionally safe, curious, and actively engaged —
+              daring to take risks, making mistakes as natural stepping stones, and discovering
+              one's voice through meaningful interaction.
+            </p>
+          </article>
+
+          <!-- Visión 3: Enseñanza -->
+          <article class="about-card reveal">
+            <div class="about-card__icon" aria-hidden="true">🏫</div>
+            <h3 class="about-card__title">My Vision of Language Teaching</h3>
+            <p class="about-card__text">
+              My role as a teacher is to be a supportive guide, an attentive listener, and an
+              architect of meaningful communicative experiences. I create low-anxiety spaces where
+              every voice matters, honoring learners' diverse backgrounds and empowering them to
+              use language as a transformative tool.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         CURRICULUM REFLECTION
+         ================================================================= -->
+    <section id="curriculum" class="section" aria-labelledby="curriculum-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">My Reflections</span>
+          <h2 class="section__title" id="curriculum-heading">Reflection About Curriculum</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </header>
+
+        <div class="curriculum__text reveal">
+          <p>
+            In Colombia, when we hear the word "curriculum," it is almost automatic to think of
+            official guidelines from the Ministry of Education — the <em>Estándares Básicos</em>,
+            the DBAs, or the constant pressure of preparing students for the Saber 11 exam.
+            Viewed that way, it is easy to treat it like a strict checklist we just have to get
+            through before the school year ends. In reality, though, curriculum is much more than
+            a national syllabus. It covers the topics we plan to teach, of course, but it also
+            lives in everything students experience at school: whether they feel comfortable making
+            mistakes, how much room they have to express their ideas, and whether class actually
+            connects to their daily lives.
+          </p>
+          <p>
+            Given how diverse Colombia is, no document written in an office in Bogotá can predict
+            what a specific group of students needs. A classroom in a rural area with limited
+            resources does not look like a private school in a major city, and neither shares the
+            exact same challenges as a crowded public school. That is why teachers shouldn't follow
+            the curriculum like a rigid script. Approaching it well means treating it as a flexible
+            guide — adapting national objectives to our students' local culture, realities, and pace.
+          </p>
+          <p>
+            It also means reading those guidelines with a critical eye instead of accepting them
+            blindly. When teachers pause to question whose realities are represented, what gets
+            left out, and whether we are truly helping students think for themselves beyond a test
+            score, the whole classroom changes. In the Colombian context, a curriculum only makes
+            sense when teachers bridge the gap between policy and real life with empathy, common
+            sense, and flexibility.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         THE SYLLABUS — Fotos con lightbox
+         ================================================================= -->
+    <section id="syllabus" class="section section--alt" aria-labelledby="syllabus-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Workshop Design</span>
+          <h2 class="section__title" id="syllabus-heading">The Syllabus</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </header>
+
+        <!-- Texto reflexivo del syllabus -->
+        <p class="syllabus__intro reveal">
+          Creating this syllabus for our TESOL workshop honestly changed how I look at course
+          planning. Working with 24 fifth-graders at a rural school in San Andrés de Sotavento,
+          Córdoba, showed my group that good planning is much deeper than an organized list of
+          grammar topics — it demands empathy, flexibility, and a deep understanding of who your
+          learners truly are.
+        </p>
+
+        <p class="syllabus__intro reveal" style="margin-top: calc(var(--spacing-md) * -1)">
+          Getting a 4.0 and reading the teacher's comments taught me just as much as writing the
+          syllabus itself. This activity reminded me that good teaching takes both structure and
+          empathy — a syllabus needs clear details on paper, but it only truly works when it is
+          built around real students. Click any card to see the full image.
+        </p>
+
+        <!-- Grid de fotos (lightbox) -->
+        <div class="syllabus__grid" role="list" aria-label="Fotografías del syllabus">
+
+          <div
+            class="photo-card"
+            role="listitem"
+            data-src="assets/images/syllabus/syllabus-01-learner-background.jpg"
+            data-caption="Learner Background & Task Brief — TESOL II Workshop Nº1"
+            data-alt="Hoja del syllabus: contexto de los aprendices y tarea del taller"
+          >
+            <img
+              src="assets/images/syllabus/syllabus-01-learner-background.jpg"
+              alt="Learner Background and Task Brief"
+              loading="lazy"
+            />
+            <div class="photo-card__overlay" aria-hidden="true">
+              <span class="photo-card__label">Learner Background · Task Brief</span>
+            </div>
+            <span class="photo-card__zoom" aria-hidden="true">🔍</span>
+          </div>
+
+          <div
+            class="photo-card"
+            role="listitem"
+            data-src="assets/images/syllabus/syllabus-03-cover-objectives.jpg"
+            data-caption="Syllabus Cover — Designers, Grade, Duration, Subject & Objectives"
+            data-alt="Portada del syllabus con diseñadores, grado, duración, objetivos"
+          >
+            <img
+              src="assets/images/syllabus/syllabus-03-cover-objectives.jpg"
+              alt="Syllabus Cover and Objectives"
+              loading="lazy"
+            />
+            <div class="photo-card__overlay" aria-hidden="true">
+              <span class="photo-card__label">Cover & Objectives</span>
+            </div>
+            <span class="photo-card__zoom" aria-hidden="true">🔍</span>
+          </div>
+
+          <div
+            class="photo-card"
+            role="listitem"
+            data-src="assets/images/syllabus/syllabus-04-activities-table.jpg"
+            data-caption="Weekly Activities Table — Topics, Competences, Activities & Learning Outcomes"
+            data-alt="Tabla de actividades semanales: temas, competencias, actividades y resultados"
+          >
+            <img
+              src="assets/images/syllabus/syllabus-04-activities-table.jpg"
+              alt="Weekly Activities and Learning Outcomes Table"
+              loading="lazy"
+            />
+            <div class="photo-card__overlay" aria-hidden="true">
+              <span class="photo-card__label">Activities Table</span>
+            </div>
+            <span class="photo-card__zoom" aria-hidden="true">🔍</span>
+          </div>
+
+          <div
+            class="photo-card"
+            role="listitem"
+            data-src="assets/images/syllabus/syllabus-02-weekly-plan.jpg"
+            data-caption="Detailed Weekly Plan — Verb To Be, Final Project"
+            data-alt="Plan semanal detallado: Verb to Be y proyecto final"
+          >
+            <img
+              src="assets/images/syllabus/syllabus-02-weekly-plan.jpg"
+              alt="Detailed Weekly Plan"
+              loading="lazy"
+            />
+            <div class="photo-card__overlay" aria-hidden="true">
+              <span class="photo-card__label">Weekly Plan</span>
+            </div>
+            <span class="photo-card__zoom" aria-hidden="true">🔍</span>
+          </div>
+
+          <div
+            class="photo-card"
+            role="listitem"
+            data-src="assets/images/syllabus/syllabus-05-evaluation-criteria.jpg"
+            data-caption="Evaluation Criteria — Observable Indicators & Weights"
+            data-alt="Criterios de evaluación: indicadores observables y pesos"
+          >
+            <img
+              src="assets/images/syllabus/syllabus-05-evaluation-criteria.jpg"
+              alt="Evaluation Criteria"
+              loading="lazy"
+            />
+            <div class="photo-card__overlay" aria-hidden="true">
+              <span class="photo-card__label">Evaluation Criteria</span>
+            </div>
+            <span class="photo-card__zoom" aria-hidden="true">🔍</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         LESSON PLAN — Documento embebido / descargable
+         ================================================================= -->
+    <section id="lesson" class="section" aria-labelledby="lesson-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Planning Practice</span>
+          <h2 class="section__title" id="lesson-heading">Lesson Plan</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </header>
+
+        <!-- Texto reflexivo -->
+        <div class="curriculum__text reveal" style="margin-bottom: var(--spacing-2xl);">
+          <p>
+            While a syllabus gives you the big picture, planning a single class forces you to
+            think through how learning actually happens step by step. Our aim was for students to
+            be better able to create simple sentences using the verb <em>to be</em> in the present
+            simple to describe animals, objects, and people.
+          </p>
+          <p>
+            Keeping our learners' reality in mind guided every decision we made. Because these
+            students have very limited exposure to English and often feel anxious when asked to
+            speak individually, a traditional, rule-heavy grammar explanation simply would not work.
+            This activity helped me see how closely a syllabus and a lesson plan depend on each
+            other — and how good lesson planning is about building a comfortable, engaging path
+            where students feel confident enough to use the language themselves.
+          </p>
+        </div>
+
+        <!-- Tarjeta del documento -->
+        <div class="doc-card reveal">
+          <div class="doc-card__header">
+            <div class="doc-card__icon" aria-hidden="true">📋</div>
+            <div class="doc-card__meta">
+              <h3 class="doc-card__title">
+                Lesson Plan · Verb To Be — Grade 5, Rural School
+              </h3>
+              <p class="doc-card__desc">
+                Designed by María Alejandra Acosta, María José Lucero,
+                Alexandra Narváez &amp; Daniel Timaná · 50-minute lesson · Pre-A1 to A1
+              </p>
+            </div>
+          </div>
+
+          <div class="doc-card__actions">
+            <!-- Botón vista modal pantalla completa -->
+            <button
+              class="btn btn--primary"
+              onclick="openPdfModal('assets/documents/lesson-plan.pdf', 'Lesson Plan — Verb To Be')"
+              aria-label="Abrir Lesson Plan en vista emergente"
+            >
+              👁️ Open &amp; View
+            </button>
+            <!-- Botón descarga -->
+            <a
+              href="assets/documents/lesson-plan.pdf"
+              download="lesson-plan-maria-alejandra.pdf"
+              class="btn btn--outline"
+              aria-label="Descargar Lesson Plan en PDF"
+            >
+              ⬇️ Download PDF
+            </a>
+            <!-- Botón vista rápida inline -->
+            <button
+              class="btn btn--outline"
+              onclick="toggleInlinePdf('lesson-viewer', 'assets/documents/lesson-plan.pdf', this)"
+              aria-label="Vista rápida del Lesson Plan"
+            >
+              📄 Quick Preview
+            </button>
+          </div>
+
+          <!-- Visor inline -->
+          <div id="lesson-viewer" class="pdf-viewer-wrap" aria-label="Vista rápida del Lesson Plan" aria-live="polite">
+            <iframe
+              title="Lesson Plan — Verb To Be"
+              loading="lazy"
+              aria-label="Documento Lesson Plan en PDF"
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================
+         CERTIFICATE OF ATTENDANCE
+         ================================================================= -->
+    <section id="certificate" class="section section--alt" aria-labelledby="cert-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Professional Development</span>
+          <h2 class="section__title" id="cert-heading">Certificate of Attendance</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </header>
+
+        <!-- Texto reflexivo -->
+        <div class="curriculum__text reveal" style="margin-bottom: var(--spacing-2xl);">
+          <p>
+            Attending the <strong>VI International Conference on Professional Development &amp;
+            The Language Classroom Conference</strong> was a genuinely motivating experience in
+            my teacher training. Being part of this event, especially during the department's
+            60th-anniversary celebration, gave me the chance to step outside my regular university
+            courses and look at language teaching from a wider, more real-world perspective.
+          </p>
+          <p>
+            What I valued most was hearing honest classroom experiences from other teachers and
+            researchers — reinforcing that teaching a language is never just about covering grammar
+            rules. It is about reading our students' contexts with empathy and building spaces where
+            learners feel comfortable participating.
+          </p>
+        </div>
+
+        <!-- Tarjeta del certificado -->
+        <div class="doc-card reveal">
+          <div class="doc-card__header">
+            <div class="doc-card__icon" aria-hidden="true">🏅</div>
+            <div class="doc-card__meta">
+              <h3 class="doc-card__title">
+                Certificate of Attendance — VI International Conference
+              </h3>
+              <p class="doc-card__desc">
+                The Linguistics and Languages Department at Universidad de Nariño ·
+                Pasto, Colombia, October 1–3, 2026
+              </p>
+            </div>
+          </div>
+
+          <div class="doc-card__actions">
+            <button
+              class="btn btn--primary"
+              onclick="openPdfModal('assets/documents/certificate-attendance.pdf', 'Certificate of Attendance — VI International Conference')"
+              aria-label="Ver certificado en pantalla completa"
+            >
+              👁️ View Certificate
+            </button>
+            <a
+              href="assets/documents/certificate-attendance.pdf"
+              download="certificate-maria-alejandra.pdf"
+              class="btn btn--outline"
+              aria-label="Descargar certificado en PDF"
+            >
+              ⬇️ Download Certificate
+            </a>
+            <button
+              class="btn btn--outline"
+              onclick="toggleInlinePdf('cert-viewer', 'assets/documents/certificate-attendance.pdf', this)"
+              aria-label="Vista rápida del certificado"
+            >
+              📄 Quick Preview
+            </button>
+          </div>
+
+          <!-- Visor inline -->
+          <div id="cert-viewer" class="pdf-viewer-wrap" aria-label="Vista rápida del certificado" aria-live="polite">
+            <iframe
+              title="Certificate of Attendance — VI International Conference"
+              loading="lazy"
+              aria-label="Certificado en PDF"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Imagen Pompompurin académico (sutil) -->
+        <div style="display:flex; justify-content:center; margin-top: var(--spacing-2xl);">
+          <img
+            src="assets/images/pompom-grad.jpg"
+            alt="Ilustración decorativa: Pompompurin con birrete académico"
+            class="pompom-illustration reveal"
+            width="220"
+            height="220"
+            style="border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); opacity: 0.9;"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         MATERIAL
+         ================================================================= -->
+    <section id="material" class="section" aria-labelledby="material-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Creative Resources</span>
+          <h2 class="section__title" id="material-heading">Teaching Materials</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </header>
+
+        <!-- Texto reflexivo -->
+        <div class="curriculum__text reveal" style="margin-bottom: var(--spacing-2xl);">
+          <p>
+            This activity challenged us to design a lesson focused on listening and grammar to
+            teach daily routines, allowing full creative freedom in our pedagogical design. Instead
+            of falling back on standard textbook audios or predictable exercises, we relied on our
+            own creative approach to build materials from scratch — custom worksheets around clips
+            from movies and TV series.
+          </p>
+          <p>
+            Creating the worksheets ourselves completely changed how I thought about the lesson.
+            We had to carefully choose scenes that matched the students' level and figure out how
+            to guide them smoothly from understanding the audio to noticing and using the target
+            grammar naturally. It showed me how rewarding it is to take creative ownership as a
+            teacher and design original resources that genuinely connect with students.
+          </p>
+        </div>
+
+        <!-- Grid de materiales -->
+        <div class="material-grid">
+
+          <!-- Material 1: LEGO -->
+          <div class="doc-card reveal">
+            <div class="doc-card__header">
+              <div class="doc-card__icon" aria-hidden="true">🧱</div>
+              <div class="doc-card__meta">
+                <h3 class="doc-card__title">Material 1 — LEGO Cards</h3>
+                <p class="doc-card__desc">
+                  Number &amp; quantity tracing cards with colorful LEGO-inspired illustrations.
+                  Engaging visual aids for young learners.
+                </p>
+              </div>
+            </div>
+            <div class="doc-card__actions">
+              <button
+                class="btn btn--primary"
+                onclick="openPdfModal('assets/documents/material-01-lego.pdf', 'Material 1 — LEGO Cards')"
+                aria-label="Ver LEGO Cards"
+              >
+                👁️ View
+              </button>
+              <a
+                href="assets/documents/material-01-lego.pdf"
+                download="material-lego-cards.pdf"
+                class="btn btn--outline"
+                aria-label="Descargar LEGO Cards"
+              >
+                ⬇️ Download
+              </a>
+              <button
+                class="btn btn--outline"
+                onclick="toggleInlinePdf('lego-viewer', 'assets/documents/material-01-lego.pdf', this)"
+              >
+                📄 Preview
+              </button>
+            </div>
+            <div id="lego-viewer" class="pdf-viewer-wrap">
+              <iframe title="LEGO Material" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Material 2: The Office -->
+          <div class="doc-card reveal">
+            <div class="doc-card__header">
+              <div class="doc-card__icon" aria-hidden="true">📺</div>
+              <div class="doc-card__meta">
+                <h3 class="doc-card__title">Material 2 — The Office Worksheet</h3>
+                <p class="doc-card__desc">
+                  Listening &amp; grammar worksheet based on <em>The Office</em> series.
+                  Focuses on adverbs of frequency through authentic media.
+                </p>
+              </div>
+            </div>
+            <div class="doc-card__actions">
+              <button
+                class="btn btn--primary"
+                onclick="openPdfModal('assets/documents/material-02-the-office.pdf', 'Material 2 — The Office Worksheet')"
+                aria-label="Ver The Office Worksheet"
+              >
+                👁️ View
+              </button>
+              <a
+                href="assets/documents/material-02-the-office.pdf"
+                download="material-the-office-worksheet.pdf"
+                class="btn btn--outline"
+                aria-label="Descargar The Office Worksheet"
+              >
+                ⬇️ Download
+              </a>
+              <button
+                class="btn btn--outline"
+                onclick="toggleInlinePdf('office-viewer', 'assets/documents/material-02-the-office.pdf', this)"
+              >
+                📄 Preview
+              </button>
+            </div>
+            <div id="office-viewer" class="pdf-viewer-wrap">
+              <iframe title="The Office Worksheet" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Material 3: Rapunzel -->
+          <div class="doc-card reveal">
+            <div class="doc-card__header">
+              <div class="doc-card__icon" aria-hidden="true">👸</div>
+              <div class="doc-card__meta">
+                <h3 class="doc-card__title">Material 3 — Rapunzel Worksheet</h3>
+                <p class="doc-card__desc">
+                  "A Day in Rapunzel's Life" — Listening activity where students number
+                  daily routine activities from the song in sequence.
+                </p>
+              </div>
+            </div>
+            <div class="doc-card__actions">
+              <button
+                class="btn btn--primary"
+                onclick="openPdfModal('assets/documents/material-03-rapunzel.pdf', 'Material 3 — Rapunzel Worksheet')"
+                aria-label="Ver Rapunzel Worksheet"
+              >
+                👁️ View
+              </button>
+              <a
+                href="assets/documents/material-03-rapunzel.pdf"
+                download="material-rapunzel-worksheet.pdf"
+                class="btn btn--outline"
+                aria-label="Descargar Rapunzel Worksheet"
+              >
+                ⬇️ Download
+              </a>
+              <button
+                class="btn btn--outline"
+                onclick="toggleInlinePdf('rapunzel-viewer', 'assets/documents/material-03-rapunzel.pdf', this)"
+              >
+                📄 Preview
+              </button>
+            </div>
+            <div id="rapunzel-viewer" class="pdf-viewer-wrap">
+              <iframe title="Rapunzel Worksheet" loading="lazy"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         REFLECTION (Short Portfolio Reflection)
+         ================================================================= -->
+    <section id="reflection" class="section section--alt" aria-labelledby="reflection-heading">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__eyebrow">Looking Back</span>
+          <h2 class="section__title" id="reflection-heading">Portfolio Reflection</h2>
+          <div class="section__divider" aria-hidden="true"></div>
+        </header>
+
+        <div class="reflection__card reveal">
+          <div class="reflection__text">
+            <p>
+              Putting this portfolio together has given me a much clearer picture of what it
+              truly means to plan and teach a language. Moving from reflecting on the curriculum
+              in our context to designing a syllabus, building lesson plans, and creating original
+              materials showed me how closely every teaching decision is connected.
+            </p>
+            <p>
+              What stood out most across all these experiences is that thoughtful planning is never
+              just about organizing grammar points or meeting standards on paper; it is about keeping
+              real students — their backgrounds, and how they feel in the classroom — at the center
+              of the process.
+            </p>
+          </div>
+        </div>
+
+        <!-- Hero image Pompompurin (ilustración estudio) -->
+        <div style="display:flex; justify-content:center; margin-top: var(--spacing-2xl);">
+          <img
+            src="assets/images/pompom-hero.jpg"
+            alt="Ilustración decorativa: Pompompurin estudiando"
+            class="pompom-illustration reveal"
+            style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md); max-width: 480px; width: 100%;"
+            loading="lazy"
+          />
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       FOOTER
+       ===================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__logo" aria-label="María Alejandra Acosta Rodríguez">
+        <span aria-hidden="true">🐾</span>
+        María Alejandra Acosta Rodríguez
+      </div>
+      <nav class="footer__links" aria-label="Navegación de pie de página">
+        <a href="#about"      class="footer__link">About</a>
+        <a href="#syllabus"   class="footer__link">Syllabus</a>
+        <a href="#lesson"     class="footer__link">Lesson Plan</a>
+        <a href="#certificate" class="footer__link">Certificate</a>
+        <a href="#material"   class="footer__link">Materials</a>
+      </nav>
+      <p class="footer__copy">
+        TESOL Teaching Portfolio · 7th Semester · Universidad de Nariño · 2026
+      </p>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       LIGHTBOX MODAL — Fotos del Syllabus
+       ===================================================================== -->
+  <div
+    id="lightbox"
+    class="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Visualizador de imágenes"
+    tabindex="-1"
+  >
+    <div class="lightbox__content">
+      <!-- Flecha anterior -->
+      <button class="lightbox__nav lightbox__nav--prev" aria-label="Imagen anterior">‹</button>
+
+      <img class="lightbox__img" src="" alt="" loading="lazy" />
+
+      <div class="lightbox__caption" aria-live="polite"></div>
+
+      <!-- Flecha siguiente -->
+      <button class="lightbox__nav lightbox__nav--next" aria-label="Imagen siguiente">›</button>
+
+      <!-- Botón cerrar -->
+      <button class="lightbox__close" aria-label="Cerrar lightbox">✕</button>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       PDF MODAL — Visor pantalla completa
+       ===================================================================== -->
+  <div
+    id="pdf-modal"
+    class="pdf-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Visor de documento"
+    tabindex="-1"
+  >
+    <div class="pdf-modal__header">
+      <span class="pdf-modal__title">Documento</span>
+      <div class="pdf-modal__actions">
+        <a
+          id="pdf-modal-download"
+          href="#"
+          download
+          class="btn btn--primary"
+          style="font-size:0.8125rem;"
+          aria-label="Descargar este documento"
+        >⬇️ Descargar</a>
+        <button class="pdf-modal__close" aria-label="Cerrar visor">✕</button>
+      </div>
+    </div>
+
+    <div class="pdf-modal__frame">
+      <iframe
+        id="pdf-modal-frame"
+        title="Documento PDF"
+        src=""
+        loading="lazy"
+        aria-label="Contenido del documento"
+      ></iframe>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       SCROLL TO TOP BUTTON
+       ===================================================================== -->
+  <button
+    class="scroll-top"
+    aria-label="Volver al inicio de la página"
+    title="Volver arriba"
+  >↑</button>
+
+  <!-- =====================================================================
+       SCRIPTS
+       ===================================================================== -->
+  <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>

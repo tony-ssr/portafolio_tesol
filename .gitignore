@@ -1,0 +1,29 @@
+# ============================================================
+# Portafolio TESOL — María Alejandra Acosta Rodríguez
+# .gitignore
+# ============================================================
+
+# Sistema operativo
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (si se agrega build tooling en el futuro)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos temporales
+*.tmp
+*.bak
+*.orig
